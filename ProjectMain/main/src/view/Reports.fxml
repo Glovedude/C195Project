@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Reports">
+   <children>
+      <StackPane layoutX="123.0" layoutY="167.0" prefHeight="266.0" prefWidth="754.0">
+         <children>
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="96.33332824707031" text="Appointment ID" />
+                <TableColumn prefWidth="54.333343505859375" text="Title" />
+                  <TableColumn prefWidth="75.0" text="Type" />
+                  <TableColumn prefWidth="75.0" text="Location" />
+                  <TableColumn prefWidth="75.0" text="Contact" />
+                  <TableColumn prefWidth="75.0" text="Customer ID" />
+                  <TableColumn prefWidth="75.0" text="User ID" />
+                  <TableColumn prefWidth="75.0" text="Start Date" />
+                  <TableColumn prefWidth="75.0" text="End Date" />
+                  <TableColumn prefWidth="75.0" text="Start Time" />
+                  <TableColumn prefWidth="75.0" text="End Time" />
+                  <TableColumn prefWidth="75.0" text="Description" />
+              </columns>
+            </TableView>
+         </children></StackPane>
+   </children>
+</AnchorPane>

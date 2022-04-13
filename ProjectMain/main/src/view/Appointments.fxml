@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Appointments">
+   <children>
+      <ButtonBar layoutX="442.0" layoutY="502.0" prefHeight="40.0" prefWidth="234.0">
+        <buttons>
+          <Button fx:id="AAdd" mnemonicParsing="false" text="Add" />
+            <Button fx:id="AUpdate" mnemonicParsing="false" text="Update" />
+            <Button fx:id="ADelete" mnemonicParsing="false" text="Delete" />
+        </buttons>
+      </ButtonBar>
+      <Button fx:id="ACancel" layoutX="777.0" layoutY="509.0" mnemonicParsing="false" text="Cancel" />
+      <Label layoutX="41.0" layoutY="44.0" text="Appointment ID" />
+      <Label layoutX="41.0" layoutY="91.0" text="Title" />
+      <Label layoutX="41.0" layoutY="130.0" text="Type" />
+      <Label layoutX="41.0" layoutY="173.0" text="Location" />
+      <Label layoutX="41.0" layoutY="214.0" text="Contact" />
+      <Label layoutX="41.0" layoutY="257.0" text="Customer ID" />
+      <Label layoutX="40.0" layoutY="354.0" text="Start Date" />
+      <Label layoutX="410.0" layoutY="354.0" text="Start Time" />
+      <Label layoutX="412.0" layoutY="398.0" text="End Time" />
+      <ComboBox fx:id="AStartTime" layoutX="500.0" layoutY="350.0" prefWidth="150.0" />
+      <ComboBox fx:id="AEndTime" layoutX="500.0" layoutY="394.0" prefWidth="150.0" />
+      <Label layoutX="37.0" layoutY="410.0" text="Description" />
+      <TextField fx:id="AAppointmentID" editable="false" layoutX="154.0" layoutY="40.0" />
+      <TextField fx:id="ATitle" layoutX="154.0" layoutY="87.0" />
+      <TextField fx:id="AType" layoutX="154.0" layoutY="126.0" />
+      <TextField fx:id="ALocation" layoutX="154.0" layoutY="169.0" />
+      <TextArea fx:id="ADescription" layoutX="126.0" layoutY="394.0" prefHeight="151.0" prefWidth="251.0" />
+      <Label layoutX="42.0" layoutY="300.0" text="User ID" />
+      <DatePicker fx:id="AStartDate" layoutX="153.0" layoutY="350.0" />
+      <ComboBox fx:id="AContact" layoutX="153.0" layoutY="210.0" prefWidth="150.0" />
+      <ComboBox fx:id="ACustomerID" layoutX="153.0" layoutY="253.0" prefWidth="150.0" />
+      <ComboBox fx:id="AUserID" layoutX="153.0" layoutY="296.0" prefWidth="150.0" />
+      <RadioButton fx:id="AViewAll" layoutX="399.0" layoutY="36.0" mnemonicParsing="false" text="View All" />
+      <RadioButton fx:id="AWeekly" layoutX="510.0" layoutY="35.0" mnemonicParsing="false" text="Weekly" />
+      <RadioButton fx:id="AMonthly" layoutX="617.0" layoutY="35.0" mnemonicParsing="false" text="Monthly" />
+      <StackPane layoutX="400.0" layoutY="76.0" prefHeight="244.0" prefWidth="579.0">
+         <children>
+            <TableView fx:id="ATableView" prefHeight="244.0" prefWidth="393.0">
+              <columns>
+                <TableColumn prefWidth="109.33334350585938" text="Appointment ID" />
+                <TableColumn minWidth="9.666717529296875" prefWidth="43.333343505859375" text="Title" />
+                  <TableColumn prefWidth="39.33331298828125" text="Type" />
+                  <TableColumn prefWidth="66.0" text="Location" />
+                  <TableColumn prefWidth="49.33331298828125" text="Contact" />
+                  <TableColumn prefWidth="96.0" text="Customer ID" />
+                  <TableColumn prefWidth="45.6666259765625" text="User ID" />
+                  <TableColumn prefWidth="71.6666259765625" text="Start Date" />
+                  <TableColumn prefWidth="54.66668701171875" text="End Date" />
+                  <TableColumn prefWidth="66.66668701171875" text="Start Time" />
+                  <TableColumn minWidth="0.0" prefWidth="58.0" text="End Time" />
+                  <TableColumn prefWidth="118.6666259765625" text="Description" />
+              </columns>
+            </TableView>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

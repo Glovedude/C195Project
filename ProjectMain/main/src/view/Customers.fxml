@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Customers">
+   <children>
+      <ButtonBar layoutX="159.0" layoutY="334.0" prefHeight="40.0" prefWidth="261.0">
+        <buttons>
+          <Button fx:id="CAdd" mnemonicParsing="false" text="Add" />
+            <Button fx:id="CUpdate" mnemonicParsing="false" text="Update" />
+            <Button fx:id="CDelete" mnemonicParsing="false" text="Delete" />
+        </buttons>
+      </ButtonBar>
+      <Button fx:id="CCancel" layoutX="517.0" layoutY="341.0" mnemonicParsing="false" text="Cancel" />
+      <TextField fx:id="CID" editable="false" layoutX="126.0" layoutY="33.0" prefHeight="25.0" prefWidth="108.0" />
+      <TextField fx:id="CName" layoutX="126.0" layoutY="72.0" prefHeight="25.0" prefWidth="108.0" />
+      <TextField fx:id="CAddress" layoutX="126.0" layoutY="111.0" prefHeight="25.0" prefWidth="108.0" />
+      <TextField fx:id="CPhone" layoutX="126.0" layoutY="153.0" prefHeight="25.0" prefWidth="108.0" />
+      <TextField fx:id="CPostal" layoutX="126.0" layoutY="187.0" prefHeight="25.0" prefWidth="108.0" />
+      <Label layoutX="32.0" layoutY="37.0" text="Customer ID" />
+      <Label layoutX="32.0" layoutY="76.0" text="Name" />
+      <Label layoutX="32.0" layoutY="115.0" text="Address" />
+      <Label layoutX="32.0" layoutY="157.0" text="Phone Number" />
+      <Label layoutX="32.0" layoutY="191.0" text="Postal Code" />
+      <ComboBox fx:id="CCountry" layoutX="126.0" layoutY="236.0" prefWidth="150.0" />
+      <ComboBox fx:id="CCity" layoutX="314.0" layoutY="236.0" prefWidth="150.0" />
+      <Label layoutX="34.0" layoutY="240.0" prefHeight="17.0" prefWidth="51.0" text="Country" />
+      <TableView layoutX="300.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
